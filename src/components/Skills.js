@@ -71,7 +71,7 @@ export default function Skills() {
               </LightTooltip> 
             </Grid>
             <Grid item xs={1} s={1} md={1}>
-              <LightTooltip title="React"> 
+             <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="React" enterDelay={400} leaveDelay={200}>  
                 <Button className={classes.button}> 
                     <DiReact size={'75px'}>
                     </DiReact>
@@ -79,7 +79,7 @@ export default function Skills() {
               </LightTooltip> 
             </Grid>
             <Grid item xs={1} s={1} md={1}>
-              <LightTooltip title="Redux"> 
+             <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Redux" enterDelay={400} leaveDelay={200}> 
                 <Button className={classes.button}> 
                     <SiRedux size={'75px'}>
                     </SiRedux>
@@ -87,7 +87,7 @@ export default function Skills() {
               </LightTooltip> 
             </Grid>
             <Grid item xs={1} s={1} md={1}>
-              <LightTooltip title="JavaScript"> 
+             <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="JavaScript" enterDelay={400} leaveDelay={200}>
                 <Button className={classes.button}> 
                     <DiJavascript1 size={'75px'}>
                     </DiJavascript1>
@@ -95,7 +95,7 @@ export default function Skills() {
               </LightTooltip> 
             </Grid>
             <Grid item xs={1} s={1} md={1}>
-            <LightTooltip title="Git"> 
+            <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Git" enterDelay={400} leaveDelay={200}>
                 <Button className={classes.button}> 
                     <DiGit size={'75px'}>
                     </DiGit>
@@ -103,7 +103,7 @@ export default function Skills() {
               </LightTooltip>
             </Grid>
             <Grid item xs={1} s={1} md={1}>
-            <LightTooltip title="Visual Studio Code"> 
+            <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Visual Studio Code" enterDelay={400} leaveDelay={250}> 
                 <Button className={classes.button}> 
                     <DiVisualstudio size={'75px'}>
                     </DiVisualstudio>
