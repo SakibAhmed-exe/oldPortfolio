@@ -23,9 +23,18 @@ const StyledTabs = withStyles({
 const StyledTab = withStyles((theme) => ({
   root: {
     textTransform: 'none',
-    color: 'white',
-    fontWeight: theme.typography.fontWeightRegular,
-    fontSize: theme.typography.pxToRem(15),
+    color: 'black',
+    fontWeight: theme.typography.fontWeightBold,
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+    ].join(','),
+    fontSize: '1.6em',
     marginRight: theme.spacing(1),
     '&:focus': {
       opacity: 1,
@@ -40,14 +49,17 @@ const useStyles = makeStyles((theme) => ({
   },
   appbar: {
     marginTop: '1%',
-    background: 'linear-gradient(179deg,#614385 10%, #516395 90%)',
-    boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-    borderRadius: "20px",
+    paddingTop: '1%',
+    paddingBottom: '1%',
+    background: 'linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)',
+    borderRadius: "40px",
+    boxShadow: "0px 10px 25px 3px rgba( 155, 164, 193, .6 )",
   },
+  
 }));
 
 function App() {
-  const routes = ["/about","/resume", "/projects"];
+  const routes = ["/","/resume", "/projects"];
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -83,7 +95,7 @@ function App() {
         <Switch>
           <Route path="/resume" component={Resume}/>
           <Route path="/projects" component={Projects}/>
-          <Route path="/about" component={About}/>
+          <Route path="/" component={About}/>
         </Switch>
       </BrowserRouter>
     </div>
