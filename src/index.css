@@ -8,6 +8,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Consolas, Menlo, source-code-pro, Monaco;
+  padding: 2px;
 }

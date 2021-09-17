@@ -2,10 +2,10 @@ import React from 'react';
 import {Card, CardActions, CardContent, Grid, Avatar, CardMedia, Button, TextField, Typography, Tooltip} from '@material-ui/core';
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import profilepic from '../portfolioavatar.png';
-import javapic from '../javalogo.png';
 import {DiReact, DiGit, DiJavascript1, DiJava, DiVisualstudio} from "react-icons/di";
 import {SiRedux} from "react-icons/si";
 import Skills from './Skills';
+import Contacts from './Contacts';
 
 const useStyles = makeStyles((theme) => ({
       grid: {
@@ -18,19 +18,19 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "40px",   
       },
       cardmedia: {
-        borderRadius: "200px",
+        borderRadius: "75px",
         marginTop: '8%',
         marginBottom: '8%',
         marginLeft: '0%',
         width: "100%",
-		    maxHeight: 300,
+		maxHeight: 300,
         minWidth: 250, 
         boxShadow: "0px 10px 35px 5px rgba( 155, 164, 193, .8 )",
       },
       card: {
           alignItems: 'center',
-          background: 'linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%)',
-          borderRadius: '20px',
+          background: 'linear-gradient( 35deg, #5EFCE8 10%, #736EFE 100%)',
+          borderRadius: '40px',
           boxShadow: "0px 10px 35px 5px rgba( 155, 164, 193, .8 )",
       },
       bullet: {
@@ -72,7 +72,7 @@ export default function() {
                 </Card>
             </Grid>
             <Grid item xs={10} s={10} md={10}> 
-                <Card style={{marginTop: '5%', background:'linear-gradient( 135deg, #FEB692 10%, #EA5455 100%)'}} className={classes.card}>
+                <Card style={{marginTop: '5%', background:'linear-gradient( 350deg, #5EFCE8 10%, #736EFE 100%)'}} className={classes.card}>
                     <CardContent>
                         <Typography style={{fontSize: '1.7em'}} className={classes.typography} variant='body1'>
                             I'm currently an undergraduate student at New York University pursuing degrees in Computer 
@@ -86,6 +86,8 @@ export default function() {
         </Grid>
         <Skills>
         </Skills>
+        <Contacts>
+        </Contacts>
       </>
   );
 }

@@ -6,7 +6,7 @@ import {MdEmail} from "react-icons/md";
 
 const useStyles = makeStyles((theme) => ({
     grid: {
-        paddingLeft: '12%',
+        paddingLeft: '14%',
         padding: '3%',
         marginTop: '3%',
         background: "#fffff",
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
-      background: 'linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%)',
+      background: 'linear-gradient( 350deg, #5EFCE8 10%, #736EFE 100%)',
       boxShadow: "0px 10px 25px 3px rgba( 155, 164, 193, .8 )",
       color: 'black',
       borderRadius: '40px',

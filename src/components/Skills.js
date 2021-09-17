@@ -1,7 +1,5 @@
 import React from 'react';
 import {Tooltip, Button, Grid, withStyles,makeStyles, Zoom, Typography} from '@material-ui/core';
-import profilepic from '../portfolioavatar.png';
-import javapic from '../javalogo.png';
 import {DiReact, DiGit, DiJavascript1, DiJava, DiVisualstudio, DiCss3, DiPython} from "react-icons/di";
 import {SiRedux, SiJavascript} from "react-icons/si";
 import {AiFillHtml5} from "react-icons/ai";
@@ -38,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
-      background: 'linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%)',
+      background: 'linear-gradient( 350deg, #5EFCE8 10%, #736EFE 100%)',
       boxShadow: "0px 10px 25px 3px rgba( 155, 164, 193, .8 )",
       color: 'black',
       borderRadius: '40px',
