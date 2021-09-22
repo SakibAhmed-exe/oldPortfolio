@@ -1,32 +1,21 @@
-# Getting Started with Create React App
+# Personal Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I made my own website! The site is meant to feature some information about me, my resume, and any projects I've completed. This application was bootstrapped with react-create-app. 
 
-## Available Scripts
+## How to Run
 
-In the project directory, you can run:
+In terminal, just type `npm run start` in the same directory as the project! Then, open [http://localhost:3000](http://localhost:3000) to view the apliccation in 
+your browser of choice. Edits made to the code will be rendered in real-time. 
 
-### `npm start`
+### `Features`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I've implemented a handful of frameworks/libraries for this project: React.js, Material UI, and React Router. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Material UI was used to create a responsive layout that can adapt to any screen size. Use of the Grid component, as well as Cards/CardMedia, helped make my site look great on both mobile devices and computers with larger screens. My NavBar is made up of an AppBar containing customized Tabs. My text was modified using the Typography component, and I also added Tooltips and Buttons for my Skills and Contacts components. I used CSS3 to style my components, such as adding a fontFamily, boxShadow and hover effects. React Router was used to create a Single Page application, preventing unnecessary refreshing. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
