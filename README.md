@@ -1,11 +1,10 @@
 # Personal Website
 
 I made my own website! The site is meant to feature some information about me, my resume, and any projects I've completed. This application was bootstrapped with react-create-app. 
-
-![Landing Page](/demopics/portfoliotooltippic.png)
-![Projects Page](/demopics/portfolioprojectspic.png)
-<img src="/demopics/portfoliotooltippic.png" width="100" height="100">
-
+<p align="center">
+<img src="/demopics/portfoliotooltippic.png" width="500" height="500">
+<img src="/demopics/portfolioprojectspic.png" width="500" height="500">
+<p/>
 ## How to Run
 
 In terminal, just type `npm run start` in the same directory as the project! Then, open [http://localhost:3000](http://localhost:3000) to view the apliccation in 
