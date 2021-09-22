@@ -1,6 +1,6 @@
 # Personal Website
 
-I made my own website! The site is meant to feature some information about me, my resume, and any projects I've completed. This application was bootstrapped with react-create-app. I've included two pictures below, but you can goto sakibahmed.co to see the entire thing. 
+This is a Single Page application that features some information about me, my resume, and any projects I've completed. This application was bootstrapped with react-create-app. I've included two pictures below, but you can goto sakibahmed.co to see the entire thing. 
 
 <p align="center">
 <img src="/demopics/portfoliotooltippic.png" width="400" height="400">
@@ -9,8 +9,7 @@ I made my own website! The site is meant to feature some information about me, m
 
 ## How to Run
 
-In terminal, just type `npm run start` in the same directory as the project! Then, open [http://localhost:3000](http://localhost:3000) to view the apliccation in 
-your browser of choice. Edits made to the code will be rendered in real-time. 
+In terminal, just type `npm run start` in the same directory as the project! Then, open [http://localhost:3000](http://localhost:3000) to view the apliccation in your browser of choice. Edits made to the code will be rendered in real-time. 
 
 ## `Features`
 
