@@ -3,8 +3,8 @@
 I made my own website! The site is meant to feature some information about me, my resume, and any projects I've completed. This application was bootstrapped with react-create-app. I've included two pictures below, but you can goto sakibahmed.co to see the entire thing. 
 
 <p align="center">
-<img src="/demopics/portfoliotooltippic.png" width="500" height="500">
-<img src="/demopics/portfolioprojectspic.png" width="500" height="500">
+<img src="/demopics/portfoliotooltippic.png" width="400" height="400">
+<img src="/demopics/portfolioprojectspic.png" width="400" height="400">
 <p/>
 
 ## How to Run
