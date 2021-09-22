@@ -1,26 +1,27 @@
 import React from 'react';
-import {Tooltip, Button, Grid, withStyles,makeStyles, Zoom, Typography} from '@material-ui/core';
+import {Tooltip, Button, Grid, withStyles,makeStyles, Zoom} from '@material-ui/core';
 import {DiReact, DiGit, DiJavascript1, DiJava, DiVisualstudio, DiCss3, DiPython} from "react-icons/di";
-import {SiRedux, SiJavascript} from "react-icons/si";
+import {SiRedux} from "react-icons/si";
 import {AiFillHtml5} from "react-icons/ai";
 
 const useStyles = makeStyles((theme) => ({
-    grid: {
-        paddingLeft: '5%',
-        padding: '6%',
+      grid: {
+        padding: '3%',
         marginTop: '3%',
+        margin: 'auto',
         background: "#fffff",
         boxShadow: "0px 10px 35px 5px rgba( 155, 164, 193, .8 )",
         borderRadius: "40px",
-        justifyContent: 'space-evenly',
-        alignItems: 'stretch',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'center',
+        width: '90%',
       },
       button: {
           borderRadius: '15px',
           minHeight: '75px',
       },
       typography: {
-        marginBottom: '0%',
         textAlign: 'center',
         fontFamily: [
             '-apple-system',
@@ -36,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
-      background: 'linear-gradient( 350deg, #5EFCE8 10%, #736EFE 100%)',
+      background: 'linear-gradient( 170deg, #76d275 35%, #736EFE 100%)',
       boxShadow: "0px 10px 25px 3px rgba( 155, 164, 193, .8 )",
       color: 'black',
       borderRadius: '40px',
@@ -58,7 +59,7 @@ export default function Skills() {
     const classes = useStyles();
     return (
         <Grid container className={classes.grid}>
-            <Grid item xs={3} md={1}>
+            <Grid item xs='auto' style={{paddingLeft: '5%', paddingRight: '5%'}}>
               <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Java" enterDelay={400} leaveDelay={200}> 
                 <Button className={classes.button}> 
                     <DiJava size={'75px'}>
@@ -66,7 +67,7 @@ export default function Skills() {
                 </Button>
               </LightTooltip> 
             </Grid>
-            <Grid item xs={3} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
               <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Python" enterDelay={400} leaveDelay={200}> 
                 <Button className={classes.button}> 
                     <DiPython size={'75px'}>
@@ -74,7 +75,7 @@ export default function Skills() {
                 </Button>
               </LightTooltip> 
             </Grid>
-            <Grid item xs={3} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
              <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="React" enterDelay={400} leaveDelay={200}>  
                 <Button className={classes.button}> 
                     <DiReact size={'75px'}>
@@ -82,15 +83,15 @@ export default function Skills() {
                 </Button>
               </LightTooltip> 
             </Grid>
-            <Grid item xs={2} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
              <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Redux" enterDelay={400} leaveDelay={200}> 
                 <Button className={classes.button}> 
-                    <SiRedux size={'75px'}>
+                    <SiRedux size={'65px'}>
                     </SiRedux>
                 </Button>
               </LightTooltip> 
             </Grid>
-            <Grid item xs={2} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
              <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="JavaScript" enterDelay={400} leaveDelay={200}>
                 <Button className={classes.button}> 
                     <DiJavascript1 size={'75px'}>
@@ -98,7 +99,7 @@ export default function Skills() {
                 </Button>
               </LightTooltip> 
             </Grid>
-            <Grid item xs={2} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
             <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="HTML" enterDelay={400} leaveDelay={200}>
                 <Button className={classes.button}> 
                     <AiFillHtml5 size={'75px'}>
@@ -106,7 +107,7 @@ export default function Skills() {
                 </Button>
               </LightTooltip>
             </Grid>
-            <Grid item xs={2} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
             <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="CSS" enterDelay={400} leaveDelay={250}> 
                 <Button className={classes.button}> 
                     <DiCss3 size={'75px'}>
@@ -114,7 +115,7 @@ export default function Skills() {
                 </Button>
               </LightTooltip>
             </Grid>
-            <Grid item xs={2} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
             <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Git" enterDelay={400} leaveDelay={200}>
                 <Button className={classes.button}> 
                     <DiGit size={'75px'}>
@@ -122,7 +123,7 @@ export default function Skills() {
                 </Button>
               </LightTooltip>
             </Grid>
-            <Grid item xs={2} md={1}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
             <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="Visual Studio Code" enterDelay={400} leaveDelay={250}> 
                 <Button className={classes.button}> 
                     <DiVisualstudio size={'75px'}>

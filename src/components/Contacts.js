@@ -1,6 +1,4 @@
-import {Tooltip, Button, Grid, withStyles,makeStyles, Zoom, Typography, Avatar} from '@material-ui/core';
-import {DiReact, DiGit, DiJavascript1, DiJava, DiVisualstudio, DiCss3, DiPython} from "react-icons/di";
-import {SiRedux, SiJavascript} from "react-icons/si";
+import {Tooltip, Button, Grid, withStyles,makeStyles, Zoom} from '@material-ui/core';
 import {AiFillGithub, AiFillLinkedin, AiOutlineTwitter} from "react-icons/ai";
 import {MdEmail} from "react-icons/md";
 
@@ -38,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 const LightTooltip = withStyles((theme) => ({
     tooltip: {
-      background: 'linear-gradient( 350deg, #5EFCE8 10%, #736EFE 100%)',
+      background: 'linear-gradient( 170deg, #76d275 35%, #736EFE 100%)',
       boxShadow: "0px 10px 25px 3px rgba( 155, 164, 193, .8 )",
       color: 'black',
       borderRadius: '40px',
@@ -60,7 +58,7 @@ export default function Contacts() {
     const classes = useStyles();
     return (
         <Grid container className={classes.grid}>
-            <Grid item xs='auto' style={{paddingRight: '5%'}}>
+            <Grid item xs='auto' style={{paddingLeft: '5%', paddingRight: '5%'}}>
                 <Button target="_blank" href="https://github.com/SakibAhmed-exe" className={classes.button}> 
                     <AiFillGithub size={'55px'}/>
                 </Button>
@@ -75,7 +73,7 @@ export default function Contacts() {
                     <AiOutlineTwitter size={'55px'}/>
                 </Button>
             </Grid>
-            <Grid item xs='auto' style={{paddingLeft: '5%'}}>
+            <Grid item xs='auto' style={{paddingRight: '5%', paddingLeft: '5%'}}>
               <LightTooltip TransitionComponent={Zoom} TransitionProps={{timeout: 400}} title="ahmed.sakib@nyu.edu" enterDelay={400} leaveDelay={200}> 
                 <Button className={classes.button}> 
                     <MdEmail size={'55px'}/>

@@ -1,10 +1,7 @@
 import React from 'react';
-import {Card, CardActions, CardContent, Grid, Avatar, CardMedia, Button, TextField, Typography, Tooltip} from '@material-ui/core';
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import profilepic from '../portfolioavatar.png';
+import {Card, CardContent, Grid, CardMedia, Typography} from '@material-ui/core';
+import { makeStyles} from "@material-ui/core/styles";
 import memojipfp from '../memojipfp.jpg';
-import {DiReact, DiGit, DiJavascript1, DiJava, DiVisualstudio} from "react-icons/di";
-import {SiRedux} from "react-icons/si";
 import Skills from './Skills';
 import Contacts from './Contacts';
 
@@ -19,11 +16,10 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: "40px",
         justifyContent:"center",
         alignItems:"center"
-        
       },
       cardmedia: {
         borderRadius: "75px",
-        marginTop: '8%',
+        marginTop: '4%',
         marginBottom: '8%',
         margin: 'auto',
         width: "100%",
@@ -31,12 +27,18 @@ const useStyles = makeStyles((theme) => ({
         boxShadow: "0px 10px 35px 5px rgba( 155, 164, 193, .8 )",
         maxHeight: '300px',
         maxWidth: '300px',
+        '&:hover': {
+            boxShadow: "0px 0px 50px 10px rgba(67,160,71)",
+        }
       },
       card: {
           alignItems: 'center',
           background: 'linear-gradient( 170deg, #76d275 35%, #736EFE 100%)',
           borderRadius: '40px',
           boxShadow: "0px 10px 35px 5px rgba( 155, 164, 193, .8 )",
+          '&:hover': {
+            boxShadow: "0px 0px 50px 10px rgba(67,160,71)",
+          }
       },
       bullet: {
         display: 'inline-block',
@@ -58,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
       },
     }));
 
-export default function() {
+export default function About() {
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
     return (

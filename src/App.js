@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import {BrowserRouter, Route, Switch, Link} from 'react-router-dom';
 import {Tabs, Tab, AppBar} from '@material-ui/core';
-import { createTheme,makeStyles, withStyles } from "@material-ui/core/styles";
+import {makeStyles, withStyles } from "@material-ui/core/styles";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
 import About from "./components/About";
@@ -23,7 +22,7 @@ const StyledTabs = withStyles({
 const StyledTab = withStyles((theme) => ({
   root: {
     textTransform: 'none',
-    color: 'black',
+    color: 'white',
     fontWeight: theme.typography.fontWeightBold,
     fontFamily: [
       '-apple-system',
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '1%',
     paddingTop: '1%',
     paddingBottom: '1%',
-    background: 'linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%)',
+    background: '#43a047',
     borderRadius: "40px",
     boxShadow: "0px 10px 25px 3px rgba( 155, 164, 193, .6 )",
   },
