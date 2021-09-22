@@ -16,7 +16,7 @@ your browser of choice. Edits made to the code will be rendered in real-time.
 
 I've implemented a handful of frameworks/libraries for this project: React.js, Material UI, and React Router. 
 
-Material UI was used to create a responsive layout that can adapt to any screen size. Use of the Grid component, as well as Cards/CardMedia, helped make my site look great on both mobile devices and computers with larger screens. My NavBar is made up of an AppBar containing customized Tabs. My text was modified using the Typography component, and I also added Tooltips and Buttons for my Skills and Contacts components. I used CSS3 to style my components, such as adding a fontFamily, boxShadow and hover effects. React Router was used to create a Single Page application, preventing unnecessary refreshing. 
+Material UI was used to create a responsive layout that can adapt to any screen size. Use of the Grid component, as well as Cards/CardMedia, helped make my site look great on both mobile devices and computers with larger screens. My NavBar is made up of an AppBar containing customized Tabs. My text was modified using the Typography component, and I also added Tooltips and Buttons for my Skills and Contacts components; the Skills and Contacts components were added to my About page using React Fragments. I used CSS3 to style my components, such as adding a fontFamily, boxShadow and hover effects. React Router was used to create a Single Page application, preventing unnecessary refreshing. 
 
 
 
