@@ -2,10 +2,7 @@
 
 I made my own website! The site is meant to feature some information about me, my resume, and any projects I've completed. This application was bootstrapped with react-create-app. 
 
-<p align="center">
-  <img src="./Desktop/portfolioprojectspic.png" width="350" title="About Page" alt="About Page">
-  <img src="your_relative_path_here" width="350" title="Projects Page" alt="Projects Page">
-</p>
+![Landing Page](/demopics/portfoliotooltippic.png)
 
 ## How to Run
 
